@@ -2,21 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Page</title>
+    <title>Multi-Screen Example</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
 
-    <p><a href="https://play.google.com/store/apps/details?id=xp.grade10.questionpapers">GRADE 10 QUESTION PAPERS</a></p> 
-    <p><a href="https://play.google.com/store/apps/details?id=xp.grade11.questionpapers">GRADE 11 QUESTION PAPERS</a></p>
-    <p><a href="https://play.google.com/store/apps/details?id=xp.grade12.questionpapers">GRADE 12 QUESTION PAPERS</a></p>
-    <p><a href="https://play.google.com/store/apps/details?id=xp.mathematics.n1_n6">TVET QUESTION PAPERS</a></p>
+    <a href="second-page.html">
+        <button>Go to Second Page</button>
 
+    <!-- Screen 1 -->
+    <div id="screen1" class="screen">
+        <h1>Welcome to Screen 1</h1>
+        <button onclick="showScreen(2)">Go to Screen 2</button>
+    </div>
 
-    
+    <!-- Screen 2 -->
+    <div id="screen2" class="screen">
+        <h1>Welcome to Screen 2</h1>
+        <button onclick="showScreen(1)">Go to Screen 1</button>
+    </div>
 
-
+    <script src="script.js"></script>
 </body>
 </html>
